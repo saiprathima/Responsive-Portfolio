@@ -1,0 +1,228 @@
+article, aside, audio, canvas, command, datalist, details, embed, figcaption, figure, footer, header, hgroup, keygen, meter, nav, output, progress, section, source, video, p, div, body, h1, h2, h3, h4, h5, h6, ul, li, a , button{
+	font-family:'courier_primeregular';
+}
+a, a:hover, a:active, a:focus, a:visited{
+	outline: none;
+	color: #fff;
+}
+h1, h2, h3, h4, h5, h6{
+	text-align: center;
+}
+@font-face {
+    font-family: 'courier_primeregular';
+    src: url('../fonts/Courier_Prime.eot');
+    src: url('../fonts/Courier_Prime.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Courier_Prime.woff2') format('woff2'),
+         url('../fonts/Courier_Prime.woff') format('woff'),
+         url('../fonts/Courier_Prime.ttf') format('truetype'),
+         url('../fonts/Courier_Prime.svg#courier_primeregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+body{
+background-color: #000;
+font: 1.61em/150% 'courier_primeregular', Arial, Helvetica, sans-serif;
+color: #FFF;
+position: relative;
+padding:50px 0 0 0;
+margin: 0;
+text-transform: uppercase;
+}
+.body_content{
+	width: 100%;
+}
+/*Menu*/
+.collapse .breadcrumb {
+	background-color: transparent;
+	height: 32px;
+	overflow: hidden;
+}
+.collapse .breadcrumb li a{
+	text-decoration: none;
+	padding: 0 6px;
+	position: relative;
+}
+/*Animate Menu*/
+.breadcrumb a:hover{
+	animation: slide 0.4s ease-in-out 0s infinite alternate;
+	-webkit-animation: slide 0.4s ease-in-out 0s infinite alternate;
+	-moz-animation: slide 0.4s ease-in-out 0s infinite alternate;
+}
+@-webkit-keyframes slide {
+  0% {top: 0;}
+  50% {top: -10px;}
+  100% {top: 0;}
+}
+@-moz-keyframes slide {
+  0% {top: 0;}
+  50% {top: -10px;}
+  100% {top: 0;}
+}
+@keyframes slide {
+  0% {top: 0;}
+  50% {top: -10px;}
+  100% {top: 0;}
+}
+/*Welcome Text*/
+h1{
+	font-size: 5em;
+}
+h2{
+	font-size: 4em;
+}
+h3{
+	font-size: 3em;
+	line-height: 110px;
+	padding-bottom: 1em;
+}
+h4{
+	font-size: 2em;
+}
+h5{
+	font-size: 1.5em;
+}
+h6{
+	font-size: 1em;
+}
+.welcome_Text{
+	margin: 14% auto;
+	width: 100%;
+	text-align: center;
+}
+.welcome_Text a{
+	display: inline-block;
+	margin: 5em auto 0 auto; 
+}
+.welcome_Text a span{
+	width: 73px;
+	display: inline-block;
+	height: 35px;
+	background-image: url('../assets/down.png');
+	background-repeat: no-repeat;
+}
+.arrowtop{	
+	position: fixed;
+	bottom: 21px;
+	right: 10px;
+}
+.arrowtop span{
+	width: 30px;
+	display: inline-block;
+	height: 30px;
+	background-image: url('../assets/top.png');
+	background-repeat: no-repeat;
+}
+/*About*/
+.about{
+	background-color: #fff;
+	color: #000;
+	padding: 2%;
+	font-weight: bold;
+	padding-bottom: 10%;
+}
+.about p{
+	width: 80%;
+	margin:0 auto;
+	text-align: justify;
+}
+/*Skills*/
+.skills{
+	background-color: #000;
+	color: #fff;
+	padding: 2%;
+	font-weight: bold;
+	padding-bottom: 10%;
+}
+.skills ul li{
+	list-style-type: none;
+	text-align: center;
+}
+.skills ul li span{
+	width: 96px;
+	height:96px;
+	display: inline-block;
+	background-image: url('../assets/logosprite.png');
+}
+.skills ul li span.col1{
+	background-position: -96px 0px;	
+}
+.skills ul li span.col2{
+	background-position: 0px 0px;	
+}
+.skills ul li span.col3{
+	background-position: -286px 0px;	
+}
+.skills ul li span.col4{
+	background-position: -192px 0px;	
+}
+/*portfolio*/
+.portfolio{
+	background-color: #fff;
+	color: #000;
+	padding: 2%;
+	font-weight: bold;
+	padding-bottom: 10%;
+}
+.item span.logo{
+	border: 10px solid #000;
+	width:215px;
+	height: 215px;
+	display: inline-block;
+}
+.portfolio ul{
+	text-align: center;
+}
+.portfolio ul li{
+	list-style-type: none;
+	text-align: center;
+	position: relative;
+	overflow: hidden;
+}
+.portfolio span.row_content{
+	display: inline-block;
+	float: none;
+}
+li.item span{
+	width:215px;
+	height: 215px;
+	display: inline-block;	
+	background-repeat: no-repeat;
+}
+li.cell1 span{	
+	background-image: url('../assets/logo1.png');
+}
+li.cell2 span{
+	background-image: url('../assets/logo2.png');
+}
+li.cell3 span{
+	background-image: url('../assets/logo3.png');
+}
+li.cell4 span{
+	background-image: url('../assets/logo4.png');
+}
+li.cell5 span{
+	background-image: url('../assets/logo5.png');
+}
+li.cell6 span{
+	background-image: url('../assets/logo6.png');
+}
+li.item .item_Overlay
+{
+	width:215px;
+	height: 215px;
+	background-image: url('../assets/find.png');	
+	position: absolute;
+	top: 5px;
+	left: 20px;
+	margin-top:-200px;
+}
+li.item:hover .item_Overlay{
+	margin-top:0px;
+}
+/*Footer*/
+footer{
+background-color: #000;
+color: #fff;
+padding: 3em;
+text-align: center;
+}
