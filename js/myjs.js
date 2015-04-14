@@ -1,9 +1,7 @@
 
-function collapseMenu(){
-		var classToAdd = " nav";
-		var otherClasstoAdd = " navbar-nav";
-		var x = document.getElementById('menu');
-		x.className = x.className.replace('breadcrumb','');
-		x.className = x.className + classToAdd;
-		x.className = x.className + otherClasstoAdd;
-}
+$(document).ready(function(){
+	$('.navbar-toggle').on('click', function(){
+		$('#menu').removeClass('breadcrumb');
+		$('#menu').addClass('navbar-nav nav');
+	});
+});
